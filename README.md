@@ -589,13 +589,13 @@ button 元素的默认 type 为 submit，如果被置于 form 元素中，点击
 ```html
 <!-- good -->
 <table>
-	{foreach $item_list as $item_group}
+  {foreach $item_list as $item_group}
 	<tr>
-		{foreach $item_group as $item}
-		<td>{ $item.name }</td>
-		{/foreach}
-	<tr>
-	{/foreach}
+    {foreach $item_group as $item}
+    <td>{ $item.name }</td>
+    {/foreach}
+  <tr>
+  {/foreach}
 </table>
 
 <!-- bad -->
